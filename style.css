@@ -15,15 +15,16 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1350px;
   margin: 0 auto;
+  padding-top: 40px;
 }
 
 header {
   display: flex;
-  align-items:first baseline; 
+  align-items:flex-end; 
   justify-content: flex-end;
-  padding: 40px 80px; 
+  padding: 5px 5px; 
   background-color: white;
 }
 
@@ -60,14 +61,18 @@ header img {
   color: white;
 }
 
-.icon {
-  color: #55AB25;
-  font-size: 20px;
-  margin-left: 15px;
-}
 
-
-.icon-group {
+.icon-wrapper {
   display: flex;
-  align-items: center;
+  gap: 12px; 
+  cursor: pointer;
+  margin-bottom: 5px;
 }
+
+.icon-wrapper svg {
+  width: 24px;
+  height: 24px;
+  top: -34.28px;
+  stroke: #55AB25;
+}
+
