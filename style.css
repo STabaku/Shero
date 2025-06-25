@@ -76,3 +76,61 @@ header img {
   stroke: #55AB25;
 }
 
+
+
+.hamburger {
+  display: none;
+}
+
+
+.mobile-menu {
+  display: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .navigation-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    background: white;
+    padding: 60px 20px;
+    gap: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .mobile-menu.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .icon-wrapper {
+    gap: 10px;
+  }
+
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
