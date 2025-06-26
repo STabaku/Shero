@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Jost', sans-serif;
-  background: #fff;
-  color: #000;
+  background: white;
+  color: black;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -22,23 +22,25 @@ body {
 
 header {
   display: flex;
-  align-items:flex-end; 
+  align-items: flex-end;
   justify-content: flex-end;
-  padding: 5px 5px; 
+  padding: 5px 5px;
   background-color: white;
 }
+
 header img {
   width: 144px;
   height: 75.93px;
 }
+
 .navigation-menu {
   display: flex;
   gap: 30px;
   flex: 1;
   justify-content: center;
 }
+
 .nav-link {
-  font-family: 'Jost', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -49,13 +51,15 @@ header img {
   border-radius: 31.94px;
   transition: background 0.3s;
 }
+
 .nav-link:hover {
   background: #55AB25;
   color: white;
 }
+
 .icon-wrapper {
   display: flex;
-  gap: 12px; 
+  gap: 12px;
   cursor: pointer;
   margin-bottom: 5px;
 }
@@ -66,13 +70,16 @@ header img {
   top: -34.28px;
   stroke: #55AB25;
 }
+
 .hero-section {
   position: relative;
 }
+
 .foto-custom {
   width: 100%;
   display: block;
 }
+
 .hero-content {
   position: absolute;
   top: 0;
@@ -82,6 +89,7 @@ header img {
   display: flex;
   align-items: center;
 }
+
 .hero-text {
   padding-left: 80px;
   color: white;
@@ -92,20 +100,22 @@ header img {
   line-height: 1;
   margin-top: 8rem;
 }
+
 .subtitle {
-  font-size: 30px;       
-  margin-top: 20px;   
-  color: white;          
-  font-family: 'Jost', sans-serif; 
+  font-size: 30px;
+  margin-top: 20px;
+  color: white;
 }
+
 .hero-stats {
   position: absolute;
   right: 10%;
   top: 36%;
   display: grid;
-  display:flex;
+  display: flex;
   gap: 1vw;
 }
+
 .stat-item {
   width: 11vw;
   height: 11vw;
@@ -119,7 +129,7 @@ header img {
 }
 
 .stat-number {
-  font-size: 2.5rem;  
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 5px;
@@ -133,23 +143,22 @@ header img {
   line-height: 1.2;
 }
 
-.label-line1, 
+.label-line1,
 .label-line2 {
   display: block;
 }
 
 .cta-button {
   background: transparent;
-  color:white;
+  color: white;
   border: 2px solid white;
   padding: 1.2rem 3rem;
   border-radius: 1rem;
-  font-family: 'Jost', sans-serif;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s;
-   margin-top: 6rem; 
+  margin-top: 6rem;
 }
 
 .cta-button:hover {
@@ -157,6 +166,7 @@ header img {
   border-color: #FFD700;
   color: #000;
 }
+
 .carousel-indicators {
   position: absolute;
   bottom: 30px;
@@ -173,10 +183,11 @@ header img {
   height: 3px;
   border: none;
   cursor: pointer;
-  background: gray; 
+  background: gray;
 }
+
 .indicator.active {
-  background: white; 
+  background: white;
   transform: scaleY(1.5);
 }
 
@@ -233,83 +244,83 @@ header img {
     align-items: center;
   }
 
-   
-.hero-section {
-  padding-top: 1rem; 
-}
 
-   .hero-content {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; 
-  align-items: flex-start;    
-  padding: 20px 15px;
-  box-sizing: border-box;
-}
+  .hero-section {
+    padding-top: 1rem;
+  }
 
-.hero-text {
-  padding-left: 0;
-  max-width: 70%;
-}
+  .hero-content {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 15px;
+    box-sizing: border-box;
+  }
 
-.hero-text h1 {
-  font-size: 4vw;      
-  margin-top: 2rem;     
-  line-height: 1.1;
-}
+  .hero-text {
+    padding-left: 0;
+    max-width: 70%;
+  }
 
-.subtitle {
-  font-size: 3vw;       
-  margin-top: 10px;
-}
+  .hero-text h1 {
+    font-size: 4vw;
+    margin-top: 2rem;
+    line-height: 1.1;
+  }
 
-.cta-button {
-  font-size: 2.5vw;       
-  padding: 0.4rem 1rem;   
-  margin-top: 0.2rem;
-  align-self: flex-start; 
-}
+  .subtitle {
+    font-size: 3vw;
+    margin-top: 10px;
+  }
 
-.hero-stats {
-  position: absolute;
-  top: 30%;
-  right: 5%;
-  display: flex;
-  gap: 8px;
-  width: auto;
-}
+  .cta-button {
+    font-size: 2.5vw;
+    padding: 0.4rem 1rem;
+    margin-top: 0.2rem;
+    align-self: flex-start;
+  }
 
-.stat-item {
-  width: 12vw;
-  height: 12vw;
-  border-width: 1.2px;
-  font-size: 2vw;
-}
+  .hero-stats {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    display: flex;
+    gap: 8px;
+    width: auto;
+  }
 
-.stat-number {
-  font-size: 2vw;
-  margin-bottom: 3px;
-}
+  .stat-item {
+    width: 12vw;
+    height: 12vw;
+    border-width: 1.2px;
+    font-size: 2vw;
+  }
 
-.stat-label {
-  font-size: 1.2vw;
-  line-height: 1.1;
-}
+  .stat-number {
+    font-size: 2vw;
+    margin-bottom: 3px;
+  }
 
-.carousel-indicators {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  gap: 6px;
-}
+  .stat-label {
+    font-size: 1.2vw;
+    line-height: 1.1;
+  }
 
-.indicator {
-  width: 20px;
-  height: 2px;
-}
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 6px;
+  }
+
+  .indicator {
+    width: 20px;
+    height: 2px;
+  }
 }
