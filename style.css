@@ -27,21 +27,16 @@ header {
   padding: 5px 5px; 
   background-color: white;
 }
-
-
 header img {
   width: 144px;
   height: 75.93px;
 }
-
-
 .navigation-menu {
   display: flex;
   gap: 30px;
   flex: 1;
   justify-content: center;
 }
-
 .nav-link {
   font-family: 'Jost', sans-serif;
   font-weight: 400;
@@ -54,14 +49,10 @@ header img {
   border-radius: 31.94px;
   transition: background 0.3s;
 }
-
-
 .nav-link:hover {
   background: #55AB25;
   color: white;
 }
-
-
 .icon-wrapper {
   display: flex;
   gap: 12px; 
@@ -75,19 +66,127 @@ header img {
   top: -34.28px;
   stroke: #55AB25;
 }
+.hero-section {
+  position: relative;
+}
+.foto-custom {
+  width: 100%;
+  display: block;
+}
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.hero-text {
+  padding-left: 80px;
+  color: white;
+}
 
+.hero-text h1 {
+  font-size: 5vw;
+  line-height: 1;
+  margin-top: 8rem;
+}
+.subtitle {
+  font-size: 30px;       
+  margin-top: 20px;   
+  color: white;          
+  font-family: 'Jost', sans-serif; 
+}
+.hero-stats {
+  position: absolute;
+  right: 10%;
+  top: 36%;
+  display: grid;
+  display:flex;
+  gap: 1vw;
+}
+.stat-item {
+  width: 11vw;
+  height: 11vw;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 
+.stat-number {
+  font-size: 2.5rem;  
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.label-line1, 
+.label-line2 {
+  display: block;
+}
+
+.cta-button {
+  background: transparent;
+  color:white;
+  border: 2px solid white;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+   margin-top: 6rem; 
+}
+
+.cta-button:hover {
+  background: #FFD700;
+  border-color: #FFD700;
+  color: #000;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator {
+  width: 40px;
+  height: 3px;
+  border: none;
+  cursor: pointer;
+  background: gray; 
+}
+.indicator.active {
+  background: white; 
+  transform: scaleY(1.5);
+}
 
 .hamburger {
   display: none;
 }
 
-
 .mobile-menu {
   display: none;
 }
-
-
 
 @media (max-width: 768px) {
   .navigation-menu {
@@ -133,4 +232,84 @@ header img {
     justify-content: space-between;
     align-items: center;
   }
+
+   
+.hero-section {
+  padding-top: 1rem; 
+}
+
+   .hero-content {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: flex-start;    
+  padding: 20px 15px;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  padding-left: 0;
+  max-width: 70%;
+}
+
+.hero-text h1 {
+  font-size: 4vw;      
+  margin-top: 2rem;     
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 3vw;       
+  margin-top: 10px;
+}
+
+.cta-button {
+  font-size: 2.5vw;       
+  padding: 0.4rem 1rem;   
+  margin-top: 0.2rem;
+  align-self: flex-start; 
+}
+
+.hero-stats {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  display: flex;
+  gap: 8px;
+  width: auto;
+}
+
+.stat-item {
+  width: 12vw;
+  height: 12vw;
+  border-width: 1.2px;
+  font-size: 2vw;
+}
+
+.stat-number {
+  font-size: 2vw;
+  margin-bottom: 3px;
+}
+
+.stat-label {
+  font-size: 1.2vw;
+  line-height: 1.1;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 6px;
+}
+
+.indicator {
+  width: 20px;
+  height: 2px;
+}
 }
