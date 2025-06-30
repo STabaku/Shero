@@ -172,11 +172,11 @@ header img {
   padding: 1.2rem 3rem;
   border-radius: 1rem;
   font-size: 18px;
-  font-weight: 595;
+  font-weight: 600;
   cursor: pointer;
   transition: background 0.3s;
   margin-top: 6rem;
-    font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
    
 }
 
@@ -625,8 +625,7 @@ vertical-align: middle;
   header {
     justify-content: space-between;
     align-items: center;
-  }
-
+  } 
 
   .hero-section {
     padding-top: 1rem;
@@ -667,6 +666,9 @@ vertical-align: middle;
     margin-top: 0.2rem;
     align-self: flex-start;
   }
+
+
+
 
   .hero-stats {
     position: absolute;
@@ -842,9 +844,80 @@ vertical-align: middle;
 
 
 
+@media (min-width: 820px) and (max-width: 1180px) {
+  header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom:20px;
+  }
+
+  .navigation-menu {
+    display: none;
+  }
+ 
+  .hamburger {
+    display: block;
+    position: relative;
+    z-index: 1300;
+    cursor: pointer;
+    flex: 0 0 auto;
+  }
+
+  
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    pointer-events: none; 
+    z-index: 1000;
+  }
+
+ 
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;       
+    width: 250px;
+    height: 100vh;
+    background: white;
+    padding: 60px 20px;
+    gap: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1250;
+  }
 
 
+  .mobile-menu.active {
+    left: 0;
+  }
+.cta-button {
+    font-size: 2vw;
+    padding: 0.4rem 0.5rem;
+    margin-top: 0.6rem;
+    align-self: flex-start;
+  }
 
+.stat-item {
+    width: 12vw;
+    height: 12vw;
+    border-width: 1.2px;
+    font-size: 0.1vw;
+       margin-bottom: 2px;
+  }
+ .stat-number {
+    font-size: 3vw;
+    margin-bottom: 2px;
+  }
 
+  .stat-label {
+    font-size: 1.2vw;
+    line-height: 1.1;
+  }
 
-
+}
