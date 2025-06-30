@@ -24,7 +24,8 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  padding: 5px 5px;
+  padding: 5px 6px;
+  padding-bottom: 24px;
   background-color: white;
 }
 
@@ -57,23 +58,24 @@ header img {
   color: white;
 }
 
+
+
 .icon-wrapper {
   display: flex;
   gap: 12px;
-  cursor: pointer;
+  align-items: center;
   margin-bottom: 5px;
+
 }
 
 
-
-
-
-.icon-wrapper svg {
+.icon-wrapper img.icon-img {
   width: 24px;
   height: 24px;
-  top: -34.28px;
-  stroke: #55AB25;
+  cursor: pointer;
+
 }
+
 
 .hero-section {
   position: relative;
@@ -101,7 +103,7 @@ header img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); 
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -177,14 +179,14 @@ header img {
   transition: background 0.3s;
   margin-top: 6rem;
   font-family: 'Jost', sans-serif;
-   
+
 }
 
 .cta-button:hover {
   background: #FFD700;
   border-color: #FFD700;
   color: #000;
-  
+
 }
 
 .carousel-indicators {
@@ -219,8 +221,6 @@ header img {
   display: none;
 }
 
-
-
 .tabs {
   display: flex;
   justify-content: space-evenly;
@@ -240,7 +240,7 @@ header img {
   color: #55AB25;
   cursor: pointer;
   font-size: 18px;
- font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   text-align: left;
   width: 100%;
   max-width: 350px;
@@ -284,7 +284,7 @@ header img {
 
 .left h2 {
   color: #238014;
-  font-family: "IBM Plex Sans", sans-serif; 
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 300;
   font-size: 60px;
   line-height: 100%;
@@ -310,7 +310,7 @@ header img {
   background: #55AB25;
   color: white;
   border: none;
-  border-radius: 50px; 
+  border-radius: 50px;
   cursor: pointer;
   font-size: 22px;
   font-weight: 400;
@@ -365,15 +365,11 @@ header img {
   gap: 20px;
   margin-top: 60px;
   margin-bottom: 60px;
-
-
 }
 
 .benefit-item {
   width: 300px;
   text-align: center;
- 
-
 }
 
 .benefit-icon {
@@ -397,7 +393,6 @@ header img {
 .benefit-item p {
   color: #55AB26;
   line-height: 1.2;
-
 }
 
 .benefit-title {
@@ -416,88 +411,71 @@ header img {
   font-size: 17.51px;
   line-height: 21.89px;
   line-height: 2;
-
-
 }
-
-
-
-
-
-
-
-
 
 
 .testimonials-section {
   background: #D5E7B9;
   margin: 0;
   padding: 0;
-  height: auto; 
+  height: auto;
   display: flex;
 
 }
 
 .testimonial-container {
   display: flex;
-  align-items: stretch;  
+  align-items: stretch;
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  height: 100%;        
+  height: 100%;
   box-sizing: border-box;
 }
 
 .testimonial-text {
   width: 50%;
-  padding: 80px 80px 80px 100px; 
+  padding: 80px 80px 80px 100px;
   box-sizing: border-box;
 }
 
 .quote {
-  position:relative;
+  position: relative;
   font-family: 'Playfair Display', serif;
- color:#238014;
+  color: #238014;
 
   font-weight: 300;
   font-size: 62.05px;
   line-height: 100%;
   letter-spacing: 0%;
   margin-bottom: 40px;
-  
+
 }
 
-
-
 .quote::before {
-  content: "“"; 
+  content: "“";
   position: absolute;
   width: 45px;
   height: 30px;
-  top: 0;  
-  left: -40px; 
+  top: 0;
+  left: -40px;
   color: #238014;
-  font-size: 110px; 
+  font-size: 110px;
   line-height: 30px;
-  
+
 }
 
-
 .quote::after {
-  content: "”"; 
+  content: "”";
   position: absolute;
   width: 46px;
   height: 30px;
-  top: 150px; 
-  left: 360px; 
- 
+  top: 150px;
+  left: 360px;
   color: #238014;
   font-size: 110px;
   line-height: 30px;
 }
-
-
-
 
 .author {
   font-family: 'Jost', sans-serif;
@@ -505,21 +483,18 @@ header img {
   font-size: 28.82px;
   line-height: 100%;
   margin-bottom: 30px;
-  color:#409E31;
- 
- 
+  color: #409E31;
 }
 
 .story-button {
-
-font-family: Jost;
-font-weight: 400;
-font-size: 22px;
-line-height: 60px;
-letter-spacing: 3%;
-text-align: center;
-vertical-align: middle;
- width: 385px;
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+  letter-spacing: 3%;
+  text-align: center;
+  vertical-align: middle;
+  width: 385px;
   height: 76px;
   border-radius: 40px;
   background: #55AB25;
@@ -535,7 +510,7 @@ vertical-align: middle;
 
 .testimonial-image {
   width: 50%;
-  height: 100%;          
+  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -558,15 +533,14 @@ vertical-align: middle;
   gap: 20px;
 }
 
-
 .testimonial-arrows .swiper-button-prev,
 .testimonial-arrows .swiper-button-next {
   display: none;
 }
-.custom-prev {
-  transform: rotate(180deg) translateY(-5.2px); 
-}
 
+.custom-prev {
+  transform: rotate(180deg) translateY(-5.2px);
+}
 
 .custom-prev,
 .custom-next {
@@ -576,11 +550,8 @@ vertical-align: middle;
   cursor: pointer;
   color: #55AB26;
   padding: 0 10px;
-  user-select: none;  
+  user-select: none;
 }
-
-
-
 
 @media (max-width: 768px) {
   .navigation-menu {
@@ -625,7 +596,7 @@ vertical-align: middle;
   header {
     justify-content: space-between;
     align-items: center;
-  } 
+  }
 
   .hero-section {
     padding-top: 1rem;
@@ -667,9 +638,6 @@ vertical-align: middle;
     align-self: flex-start;
   }
 
-
-
-
   .hero-stats {
     position: absolute;
     top: 30%;
@@ -709,7 +677,7 @@ vertical-align: middle;
     height: 2px;
   }
 
-.tabs {
+  .tabs {
     padding-left: 20px;
     padding-right: 20px;
     flex-direction: column;
@@ -755,23 +723,25 @@ vertical-align: middle;
     margin-top: 0;
     max-width: 100%;
     height: auto;
-     align-self: flex-end; 
+    align-self: flex-end;
   }
 
-  .img1, .img2, .img3 {
+  .img1,
+  .img2,
+  .img3 {
     width: 20%;
     height: auto;
     margin-left: 0%;
     transform: none;
-    
   }
+
   .benefits-container {
     margin-top: 20px;
     gap: 10px;
   }
 
   .benefit-item {
-    
+
     max-width: 300px;
     padding: 0 10px;
     width: calc(50% - 5px);
@@ -787,13 +757,7 @@ vertical-align: middle;
   }
 
 
-
-
-
-
-
-
-   .testimonial-container {
+  .testimonial-container {
     flex-direction: column;
   }
 
@@ -813,17 +777,15 @@ vertical-align: middle;
     font-size: 30px;
   }
 
- .quote::before {
+  .quote::before {
     top: -9px;
     left: -15px;
-
   }
 
 
   .quote::after {
     top: 70px;
     left: 200px;
-
   }
 
   .author {
@@ -851,13 +813,13 @@ vertical-align: middle;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
 
   .navigation-menu {
     display: none;
   }
- 
+
   .hamburger {
     display: block;
     position: relative;
@@ -866,23 +828,22 @@ vertical-align: middle;
     flex: 0 0 auto;
   }
 
-  
   .logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: -30px;
-    pointer-events: none; 
+    pointer-events: none;
     z-index: 1000;
   }
 
- 
+
   .mobile-menu {
     display: flex;
     flex-direction: column;
     position: fixed;
     top: 0;
-    left: -100%;       
+    left: -100%;
     width: 250px;
     height: 100vh;
     background: white;
@@ -896,21 +857,23 @@ vertical-align: middle;
   .mobile-menu.active {
     left: 0;
   }
-.cta-button {
+
+  .cta-button {
     font-size: 2vw;
     padding: 0.4rem 0.5rem;
     margin-top: 0.6rem;
     align-self: flex-start;
   }
 
-.stat-item {
+  .stat-item {
     width: 12vw;
     height: 12vw;
     border-width: 1.2px;
     font-size: 0.1vw;
-       margin-bottom: 2px;
+    margin-bottom: 2px;
   }
- .stat-number {
+
+  .stat-number {
     font-size: 3vw;
     margin-bottom: 2px;
   }
