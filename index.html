@@ -7,6 +7,14 @@
   <title>Almsed Projekt</title>
   <link rel="stylesheet" href="./style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
@@ -45,7 +53,11 @@
     <a href="#" class="nav-link">Learn</a>
   </nav>
   <div class="hero-section">
+
+
     <img src="./FOTO/fotoHero.png" alt="Almased product" class="foto-custom" />
+    
+    <div class="overlay"></div>
     <div class="hero-content">
       <div class="hero-text">
         <h1>Natural<br>Superfood<br>Protein</h1>
@@ -89,6 +101,7 @@
       <button class="indicator" data-slide="2"></button>
       <button class="indicator" data-slide="3"></button>
     </div>
+    
   </div>
 
   <div class="tabs">
@@ -113,7 +126,7 @@
 
   <section class="benefits-container">
     <div class="benefit-item">
-      <img src="./FOTO/ikona1.png" class="benefit-icon" alt="Detoksifikim i mëlçisë">
+      <img src="./FOTO/ikona1.png" class="benefit-icon" alt="Detoksifikim i melcise">
       <h3>Liver detox, Metabolism <br>& Weight Management</h3>
       <p>(Heart health, Cut appetite, Diabetes/Gip1)</p>
     </div>
@@ -121,22 +134,76 @@
     <div class="benefit-item">
       <img src="./FOTO/ikona2.png" class="benefit-icon" alt="Bukuri dhe rinor">
       <h3>Beauty <br>& Youth</h3>
-      <p>Renewal of cells of Skin, Hair, Nails (Collagen production), HGH, biological age</p>
+      <p>Renewal of cells of Skin, Hair, Nails (Collagen production), <br>HGH, biological age</p>
     </div>
 
     <div class="benefit-item">
-      <img src="./FOTO/ikona3.png" class="benefit-icon" alt="Muskuj dhe qëndrueshmëri">
+      <img src="./FOTO/ikona3.png" class="benefit-icon" alt="Muskuj dhe qendrueshmëri">
       <h3>Muscle, Strength <br>& Endurance.</h3>
       <p>Workout performance</p>
     </div>
 
     <div class="benefit-item">
-      <img src="./FOTO/ikona4.png" class="benefit-icon" alt="Pije ushqyese e shpejtë">
+      <img src="./FOTO/ikona4.png" class="benefit-icon" alt="Pije ushqyese e shpejte">
       <h3>Quick Nutritious <br>meal shake</h3>
-      <p>Boost energy, mental and physical performance for Busy lifestyles</p>
+      <p>Boost energy, mental and physical performance for <br>Busy lifestyles</p>
+    </div>
+  </section>
+
+
+
+
+
+<section class="testimonials-section">
+    <div class="swiper testimonials-swiper">
+      <div class="swiper-wrapper">
+    
+        <div class="swiper-slide">
+          <div class="testimonial-container">
+            <div class="testimonial-text">
+              <p class="quote">The energy I<br> started to have was<br> unbelievable.</p>
+              <p class="author">— Stephanie S.</p>
+              <button class="story-button">LEARN STEPHANIE’S STORY</button>
+             <div class="testimonial-arrows">
+               <button class="custom-prev">➜</button>
+  <button class="custom-next">➜</button>
+            </div>
+            </div>
+             
+            <div class="testimonial-image">
+              <img src="./FOTO/testimonials.png" alt="Stephanie testimonial" />
+              </div>
+            
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-container">
+            <div class="testimonial-text">
+              <p class="quote">The energy I<br> started to have was<br> unbelievable.</p>
+             
+              <p class="author">— Stephanie S.</p>
+              <button class="story-button">LEARN STEPHANIE’S STORY</button>
+
+               <div class="testimonial-arrows">
+             <button class="custom-prev">➜</button>
+    <button class="custom-next">➜</button>
+            </div>
+                 
+            </div>
+            <div class="testimonial-image">
+              <img src="./FOTO/testimonials.png" alt="Stephanie testimonial" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
     </div>
   </section>
   </div>
+     
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./script.js" defer></script>
 </body>
 </html>

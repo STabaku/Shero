@@ -15,3 +15,11 @@ indicators.forEach(indicator => {
     indicator.classList.add('active');
   });
 });
+
+const swiper = new Swiper('.testimonials-swiper', {
+  navigation: {
+    prevEl: '.custom-prev',
+    nextEl: '.custom-next',
+  },
+  loop: true,
+});
