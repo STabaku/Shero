@@ -23,3 +23,32 @@ const swiper = new Swiper('.testimonials-swiper', {
   },
   loop: true,
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const myCarusel = new Glide('.glide', {
+    type: 'carousel',
+    perView: 3,
+    gap: 2,
+    rewind: false,
+  });
+
+  const carusInd = document.querySelectorAll('.carus-ind');
+
+  carusInd.forEach((dot, idx) => {
+    dot.addEventListener('click', () => {
+      myCarusel.go(`=${idx}`);
+    });
+  });
+
+  myCarusel.on('run', () => {
+    const currentIndex = myCarusel.index;
+    carusInd.forEach((dot, idx) => {
+      dot.classList.toggle('active', idx === currentIndex);
+    });
+  });
+
+  myCarusel.mount();
+});

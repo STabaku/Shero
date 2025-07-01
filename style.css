@@ -77,6 +77,10 @@ header img {
 }
 
 
+
+
+
+
 .hero-section {
   position: relative;
 }
@@ -443,7 +447,6 @@ header img {
   position: relative;
   font-family: 'Playfair Display', serif;
   color: #238014;
-
   font-weight: 300;
   font-size: 62.05px;
   line-height: 100%;
@@ -455,7 +458,7 @@ header img {
 .quote::before {
   content: "“";
   position: absolute;
-  width: 45px;
+  width: 46px;
   height: 30px;
   top: 0;
   left: -40px;
@@ -539,7 +542,7 @@ header img {
 }
 
 .custom-prev {
-  transform: rotate(180deg) translateY(-5.2px);
+  transform: rotate(180deg) translateY(-3.6px);
 }
 
 .custom-prev,
@@ -552,6 +555,310 @@ header img {
   padding: 0 10px;
   user-select: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+.health-benefits {
+  width: 1528px;
+  height: 1046px;
+  border-radius: 20px;
+  margin: auto;
+  padding-top: 40px;
+  position: relative;
+  background-color: #F1E8E6;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #228B22;
+}
+
+
+
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ccc;
+  margin-bottom: 90px;
+  min-width: 430px;
+  height: 550px;
+  margin-right: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+}
+
+.plus {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #55AB25;
+  color: white;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  z-index: 2;
+}
+
+.plus:hover {
+  background-color: white;
+  color: #55AB25;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  background: #55AB25;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  height: 25%;
+  box-sizing: border-box;
+}
+
+.card-text h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.card-text p {
+
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.3;
+
+}
+
+
+
+
+
+
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+
+}
+
+.carus-ind {
+  width: 259px;
+  height: 6px;
+
+  background-color: #B4B4B4;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 50px;
+}
+
+.carus-ind.active {
+  background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+/* CSS */
+.carousel-buttons {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 555px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 10;
+}
+
+.round-button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #228B22;
+  background-color: transparent;
+  color: #228B22;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+.round-button:hover {
+
+  background-color: #228B22;
+  color: white;
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.benefits-section {
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 150px 10px 4px 6px;
+  text-align: center;
+  font-weight: 300;
+
+}
+
+.benefits-section h1 {
+  font-size: 60px;
+  margin-bottom: 40px;
+  color: #238014;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.benefit-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 40px;
+  border: 1px solid #55AB25;
+}
+
+.benefit-percentage {
+  font-size: 55px;
+  margin-bottom: 30px;
+  color: #55AB25;
+  font-weight: 700;
+}
+
+.benefit-description {
+  font-size: 25px;
+  width: 80%;
+  line-height: 1.3;
+  color: #55AB25;
+  text-align: center;
+}
+
+.benefits-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 30px auto;
+  max-width: 800px;
+  color: #333333;
+}
+
+
+.research-button {
+  background: none;
+  border: 2px solid #238014;
+  color: #238014;
+  font-size: 18px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.research-button:hover {
+  background: #238014;
+  color: white;
+}
+
+
+
+
+@media (max-width: 900px) {
+  .benefits-container {
+    justify-content: center;
+  }
+
+  .benefit-circle {
+    width: 160px;
+    height: 160px;
+    margin: 0 10px 20px;
+  }
+
+  .benefit-percentage {
+    font-size: 36px;
+  }
+
+  .benefit-description {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
   .navigation-menu {
@@ -802,6 +1109,76 @@ header img {
     margin-right: 0;
     justify-content: center;
   }
+
+
+
+
+  .health-benefits {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    height: auto;
+  }
+
+
+
+
+
+  .card {
+    min-width: 120px;
+    height: 520px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .plus {
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    line-height: 44px;
+  }
+
+
+
+
+
+
+
+
+
+  .card-text h3 {
+    font-size: 15px;
+  }
+
+  .card-text p {
+    font-size: 10px;
+  }
+
+  .carousel-buttons {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: fit-content;
+  }
+
+  .round-button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .carus-ind {
+    width: 50px;
+    height: 10px;
+    margin-top: 15px;
+  }
+
 }
 
 

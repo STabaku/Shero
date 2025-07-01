@@ -11,6 +11,17 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Glide.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+
+  <!-- Glide.js JS -->
+
+
+
+
+
+
 </head>
 
 <body>
@@ -47,11 +58,10 @@
     <a href="#" class="nav-link">How to Use</a>
     <a href="#" class="nav-link">Learn</a>
   </nav>
+
+
   <div class="hero-section">
-
-
     <img src="./FOTO/fotoHero.png" alt="Almased product" class="foto-custom" />
-
     <div class="overlay"></div>
     <div class="hero-content">
       <div class="hero-text">
@@ -131,28 +141,20 @@
       <h3>Beauty <br>& Youth</h3>
       <p>Renewal of cells of Skin, Hair, Nails (Collagen production), <br>HGH, biological age</p>
     </div>
-
     <div class="benefit-item">
       <img src="./FOTO/ikona3.png" class="benefit-icon" alt="Muskuj dhe qendrueshmëri">
       <h3>Muscle, Strength <br>& Endurance.</h3>
       <p>Workout performance</p>
     </div>
-
     <div class="benefit-item">
       <img src="./FOTO/ikona4.png" class="benefit-icon" alt="Pije ushqyese e shpejte">
       <h3>Quick Nutritious <br>meal shake</h3>
       <p>Boost energy, mental and physical performance for <br>Busy lifestyles</p>
     </div>
   </section>
-
-
-
-
-
   <section class="testimonials-section">
     <div class="swiper testimonials-swiper">
       <div class="swiper-wrapper">
-
         <div class="swiper-slide">
           <div class="testimonial-container">
             <div class="testimonial-text">
@@ -164,11 +166,9 @@
                 <button class="custom-next">➜</button>
               </div>
             </div>
-
             <div class="testimonial-image">
               <img src="./FOTO/testimonials.png" alt="Stephanie testimonial" />
             </div>
-
           </div>
         </div>
 
@@ -176,15 +176,12 @@
           <div class="testimonial-container">
             <div class="testimonial-text">
               <p class="quote">The energy I<br> started to have was<br> unbelievable.</p>
-
               <p class="author">— Stephanie S.</p>
               <button class="story-button">LEARN STEPHANIE’S STORY</button>
-
               <div class="testimonial-arrows">
                 <button class="custom-prev">➜</button>
                 <button class="custom-next">➜</button>
               </div>
-
             </div>
             <div class="testimonial-image">
               <img src="./FOTO/testimonials.png" alt="Stephanie testimonial" />
@@ -192,14 +189,128 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
+
+  <section class="health-benefits">
+    <h2 class="title">Discover our daily health benefits</h2>
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <div class="card">
+              <img src="FOTO/karusel1.png" alt="karusel1" />
+              <div class="plus">+</div>
+              <div class="card-text">
+                <h3>Weight Loss</h3>
+                <p>Scientifically proven natural weight loss. <br>Detoxes your liver from fat so your whole
+                  <br>metabolism works better</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="glide__slide">
+            <div class="card">
+              <img src="FOTO/karusel2.png" alt="karusel2" />
+              <div class="plus">+</div>
+              <div class="card-text">
+                <h3>GLP-1 Support</h3>
+                <p>Scientifically proven to retain 100% muscle<br> mass while losing weight.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="glide__slide">
+            <div class="card">
+              <img src="FOTO/karusel3.png" alt="karusel3" />
+              <div class="plus">+</div>
+              <div class="card-text">
+                <h3>Anti-aging (Skin, hair)</h3>
+                <p>Use Almased for life to reduce biological <br>age. Feel and look younger with glowing <br>skin and
+                  healthy hair.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="glide__slide">
+            <div class="card">
+              <img src="FOTO/karusel4.png" alt="karusel4" />
+              <div class="plus">+</div>
+              <div class="card-text">
+                <h3>Sports Energy</h3>
+                <p>Almased provides endurance and recovery<br>time when working out. It gives you the <br>enrgy to go
+                  the ectra miles</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="glide__slide">
+            <div class="card">
+              <img src="FOTO/karusel5.png" alt="karusel5" />
+              <div class="plus">+</div>
+              <div class="card-text">
+                <h3>Immune Support</h3>
+                <p>Boost your immune system naturally and daily with trusted nutrients.</p>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+
+      <div class="carousel-indicators">
+        <span class="carus-ind active" data-slide="0"></span>
+        <span class="carus-ind" data-slide="1"></span>
+        <span class="carus-ind" data-slide="2"></span>
+        <span class="carus-ind" data-slide="3"></span>
+        <span class="carus-ind" data-slide="4"></span>
+      </div>
+      <div data-glide-el="controls" class="carousel-buttons">
+        <button class="round-button" data-glide-dir="<">&#x27F5;</button>
+        <button class="round-button" data-glide-dir=">">&#x27F6;</button>
+      </div>
 
     </div>
   </section>
-  </div>
+  <section class="benefits-section">
+    <h1>The Global Leader in Metabolic Health</h1>
 
+    <div class="benefits-container">
+      <div class="benefit-circle">
+        <div class="benefit-percentage">100%</div>
+        <div class="benefit-description">muscle mass<br> preservation</div>
+      </div>
+
+      <div class="benefit-circle">
+        <div class="benefit-percentage">113%</div>
+        <div class="benefit-description">more weight loss <br>than a low-fat diet</div>
+      </div>
+
+      <div class="benefit-circle">
+        <div class="benefit-percentage">86%</div>
+        <div class="benefit-description" style="text-align: center;">
+          <span>more fat loss</span><br>
+          <span style="color: white;">loss</span>
+        </div>
+
+      </div>
+
+      <div class="benefit-circle">
+        <div class="benefit-percentage">258%</div>
+        <div class="benefit-description">more waist<br> reduction</div>
+      </div>
+    </div>
+
+    <p class="benefits-text">No other protein compares to Almased. From balanced blood sugar to a better metabolism,
+      <br>Almased has been shown in peer-reviewed studies to have numerous health benefits.</p>
+    <button class="research-button">See our research studies →</button>
+  </section>
+  </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 </body>
 
 </html>
