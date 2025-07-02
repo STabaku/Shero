@@ -52,3 +52,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   myCarusel.mount();
 });
+
+
+
+const healingSwiper = new Swiper('.healing-swiper', {
+  navigation: {
+    prevEl: '.healing-prev',
+    nextEl: '.healing-next',
+  },
+  loop: true,
+});

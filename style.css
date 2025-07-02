@@ -12,6 +12,8 @@ body {
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 2%;
+  overflow-x: hidden;
+
 }
 
 .container {
@@ -75,10 +77,6 @@ header img {
   cursor: pointer;
 
 }
-
-
-
-
 
 
 .hero-section {
@@ -383,8 +381,6 @@ header img {
   object-fit: contain;
 }
 
-
-
 .benefit-item h3 {
   color: #238014;
   margin-bottom: 20px;
@@ -400,7 +396,6 @@ header img {
 }
 
 .benefit-title {
-
   font-family: 'Playfair Display', sans-serif;
   font-weight: 400;
   font-size: 21.89px;
@@ -418,13 +413,19 @@ header img {
 }
 
 
+
+
+
+
+
+
+
 .testimonials-section {
   background: #D5E7B9;
   margin: 0;
   padding: 0;
   height: auto;
   display: flex;
-
 }
 
 .testimonial-container {
@@ -452,7 +453,6 @@ header img {
   line-height: 100%;
   letter-spacing: 0%;
   margin-bottom: 40px;
-
 }
 
 .quote::before {
@@ -465,7 +465,6 @@ header img {
   color: #238014;
   font-size: 110px;
   line-height: 30px;
-
 }
 
 .quote::after {
@@ -558,6 +557,8 @@ header img {
 
 
 
+
+
 .health-benefits {
   width: 1528px;
   height: 1046px;
@@ -579,8 +580,6 @@ header img {
   margin-bottom: 40px;
   color: #228B22;
 }
-
-
 
 
 .card {
@@ -650,10 +649,6 @@ header img {
 
 
 
-
-
-
-
 .carousel-indicators {
   display: flex;
   justify-content: center;
@@ -674,11 +669,6 @@ header img {
 .carus-ind.active {
   background-color: #FFFFFF;
 }
-
-
-
-
-
 
 
 
@@ -718,14 +708,6 @@ header img {
   color: white;
   outline: none;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -804,7 +786,7 @@ header img {
   transition: all 0.2s ease;
   border-radius: 15px;
   margin-bottom: 50px;
-   font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 .research-button:hover {
@@ -812,6 +794,210 @@ header img {
   color: white;
 }
 
+
+
+
+.results-container {
+  width: 100%;
+  max-width: 1515px;
+  background-color: #F9F175;
+  margin: 0 auto 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.results-text {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  color: #238014;
+  margin-bottom: 20px;
+}
+
+.results-image {
+  width: 95%;
+  height: auto;
+  max-width: 1450px;
+}
+
+
+
+.healing-section {
+  background: #F1E8E64D;
+  margin: 60px auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1400px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.healing-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: auto;
+
+}
+
+.healing-text {
+  width: 60%;
+  padding: 80px 80px 50px 100px;
+  box-sizing: border-box;
+}
+
+.healing-quote {
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  color: #238014;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-bottom: 40px;
+}
+
+.healing-quote::before {
+  content: "“";
+  position: absolute;
+  width: 46px;
+  height: 30px;
+  top: -8px;
+  left: -40px;
+  color: #238014;
+  font-size: 110px;
+  line-height: 30px;
+}
+
+.healing-quote::after {
+  content: "”";
+  position: absolute;
+  width: 46px;
+  height: 30px;
+  top: 220px;
+  left: 470px;
+  color: #238014;
+  font-size: 110px;
+  line-height: 30px;
+}
+
+.healing-author {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 28.82px;
+  line-height: 100%;
+  margin-bottom: 30px;
+  color: #55AB26;
+  margin-top: 95px;
+}
+
+.hover-author {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.hover-author:hover {
+  color: #2d7014;
+  text-decoration: underline;
+}
+
+
+.healing-image {
+  width: 40%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.healing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.healing-second-image {
+  margin-top: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+
+
+.healing-image {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.healing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.healing-arrows {
+  position: absolute;
+
+  top: 80%;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.healing-arrows button {
+  pointer-events: auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid#55AB26;
+  background-color: transparent;
+  color: #55AB26;
+  font-size: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.healing-arrows button:hover {
+  background-color: #55AB26;
+  color: white;
+}
+
+
+.shake-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 250;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #238014;
+  margin-bottom: 40px;
+}
 
 
 
@@ -834,21 +1020,6 @@ header img {
     font-size: 14px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -988,7 +1159,7 @@ header img {
     font-size: 12px;
     margin: 5px 0;
     max-width: 100%;
-    font-family: 'Sans',  serif;
+    font-family: 'Sans', serif;
   }
 
   .content-box {
@@ -1103,9 +1274,6 @@ header img {
     justify-content: center;
   }
 
-
-
-
   .health-benefits {
     width: 100%;
     padding-left: 20px;
@@ -1113,10 +1281,6 @@ header img {
     padding-bottom: 20px;
     height: auto;
   }
-
-
-
-
 
   .card {
     min-width: 120px;
@@ -1136,14 +1300,6 @@ header img {
     height: 50px;
     line-height: 44px;
   }
-
-
-
-
-
-
-
-
 
   .card-text h3 {
     font-size: 15px;
@@ -1172,6 +1328,58 @@ header img {
     margin-top: 15px;
   }
 
+  .results-text {
+    font-size: 24px;
+  }
+
+  .shake-text {
+    font-size: 20px;
+    margin-top: 2px;
+  }
+
+  .healing-container {
+    flex-direction: column;
+  }
+
+  .healing-text,
+  .healing-image {
+    width: 100%;
+    padding: 20px 20px;
+  }
+
+  .healing-quote {
+    font-size: 22px;
+    line-height: 130%;
+  }
+
+  .healing-quote::after {
+    top: 90px;
+    left: auto;
+    right: 35px;
+    font-size: 50px;
+  }
+
+  .healing-quote::before {
+    top: -10px;
+    font-size: 50px;
+    left: -20px;
+  }
+
+  .healing-author {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .healing-arrows {
+    top: 85%;
+    padding: 0 30px;
+  }
+
+  .healing-arrows button {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+  }
 }
 
 
