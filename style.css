@@ -244,7 +244,7 @@ header img {
   color: #55AB25;
   cursor: pointer;
   font-size: 18px;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   text-align: left;
   width: 100%;
   max-width: 350px;
@@ -555,14 +555,6 @@ header img {
   padding: 0 10px;
   user-select: none;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -996,6 +988,7 @@ header img {
     font-size: 12px;
     margin: 5px 0;
     max-width: 100%;
+    font-family: 'Sans',  serif;
   }
 
   .content-box {
