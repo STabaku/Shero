@@ -665,7 +665,6 @@ header img {
 .carus-ind {
   width: 259px;
   height: 6px;
-
   background-color: #B4B4B4;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -685,7 +684,7 @@ header img {
 
 
 
-/* CSS */
+
 .carousel-buttons {
   position: absolute;
   margin-top: 20px;
@@ -772,7 +771,7 @@ header img {
 }
 
 .benefit-percentage {
-  font-size: 55px;
+  font-size: 60px;
   margin-bottom: 30px;
   color: #55AB25;
   font-weight: 700;
@@ -805,6 +804,7 @@ header img {
   transition: all 0.2s ease;
   border-radius: 15px;
   margin-bottom: 50px;
+   font-family: 'Jost', sans-serif;
 }
 
 .research-button:hover {
