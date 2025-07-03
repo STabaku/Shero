@@ -953,7 +953,6 @@ header img {
 
 .healing-arrows {
   position: absolute;
-
   top: 80%;
   left: 0px;
   right: 0px;
@@ -1000,6 +999,284 @@ header img {
   margin-bottom: 40px;
 }
 
+
+
+
+
+
+
+
+.shake-recipes {
+  width: 1528px;
+  height: 1046px;
+  border-radius: 20px;
+  margin: auto;
+  padding-top: 40px;
+  position: relative;
+  background-color: #F1E8E6;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  font-family: 'Jost', serif;
+
+}
+
+.title-shake {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #228B22;
+
+}
+
+
+.card-recipes {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #ccc;
+  margin-bottom: 90px;
+  max-width: 400px;
+  min-width: 300px;
+  height: 550px;
+
+}
+
+
+.card-recipes img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+
+
+.plus-recipe {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #55AB25;
+  color: white;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  border: 2px solid#55AB26;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  z-index: 2;
+}
+
+.plus-recipe:hover {
+  background-color: transparent;
+  color: #55AB25;
+
+}
+
+.card-text-recipe {
+  position: absolute;
+  bottom: 0;
+  background: #55AB25;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  height: 25%;
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-family: 'Jost', sans-serif;
+  font-size: 20.82px;
+}
+
+.card-text-recipe h3 {
+  margin: 0 0 10px;
+  letter-spacing: 0.06em;
+}
+
+
+
+
+
+
+
+.logos-container {
+  width: 100%;
+  max-width: 1515px;
+  background-color: white;
+  margin: 0 auto 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.logos-text {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  color: #238014;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
+  row-gap: 60px;
+  width: 100%;
+  max-width: 1000px;
+  justify-items: center;
+  align-items: baseline;
+}
+
+.logo-image {
+  height: auto;
+  width: 190px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.small-logo {
+  width: 150px;
+  height: auto;
+  align-self: center;
+}
+
+
+
+
+.store-button {
+  background: none;
+  border: 2px solid #238014;
+  color: #238014;
+  font-size: 12px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  font-family: 'Jost', sans-serif;
+  width: 220px;
+  margin-bottom: 90px;
+}
+
+.store-button:hover {
+  background: #238014;
+  color: white;
+}
+
+
+.award-image {
+  width: 85%;
+  height: auto;
+  max-width: 1450px;
+  margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+.newsletter-container {
+  width: 100%;
+  max-width: 1515px;
+  background-color: #D5E7B9;
+  margin: 0 auto 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: 180px;
+}
+
+.small-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 000;
+  font-size: 27.81px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  color: #238014;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.big-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  font-size: 41.71px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #238014;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+
+
+
+.email-container {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+  max-width: 1200px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.email-input {
+  max-width: 920px;
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #55B046;
+  border-radius: 20px;
+  font-size: 18px;
+  background-color: transparent;
+  color: #333;
+}
+
+.email-input::placeholder {
+  color: #238014;
+
+}
+
+.email-button {
+  padding: 10px 20px;
+  background-color: #55AB26;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 180px;
+  font-size: 22px;
+}
+
+.email-button:hover {
+  background-color: #44891a;
+
+}
 
 
 @media (max-width: 900px) {
@@ -1380,6 +1657,81 @@ header img {
     width: 50px;
     height: 50px;
     font-size: 26px;
+  }
+
+
+
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  .logo-image {
+    width: 130px;
+    height: 100px;
+  }
+
+  .logos-text {
+    font-size: 20px;
+  }
+
+  .store-button {
+    width: 180px;
+    font-size: 11px;
+    padding: 10px 10px;
+  }
+
+
+
+
+
+  .shake-recipes {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .title-shake {
+    font-size: 32px;
+  }
+
+  .card-recipes {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+  }
+
+  .card-recipes img {
+    height: 200px;
+  }
+
+  .card-text-recipe {
+    position: static;
+    height: auto;
+    padding: 10px;
+  }
+
+  .plus-recipe {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .email-container {
+    flex-direction: column;
+    max-width: 90%;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .email-button {
+    width: 100%;
+    min-width: unset;
+    font-size: 18px;
   }
 }
 
