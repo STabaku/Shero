@@ -1200,7 +1200,6 @@ header img {
   width: 100%;
   max-width: 1515px;
   background-color: #D5E7B9;
-  margin: 0 auto 50px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -1242,6 +1241,7 @@ header img {
   margin-top: 20px;
   margin-bottom: 60px;
   font-family: 'IBM Plex Sans', sans-serif;
+
 }
 
 .email-input {
@@ -1275,8 +1275,60 @@ header img {
 
 .email-button:hover {
   background-color: #44891a;
-
 }
+
+
+
+
+
+.almased-footer {
+  background-color:#4F842E; 
+  padding-top:90px;
+  padding-bottom: 200px;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.footer-column {
+  min-width: 180px;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 15px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.footer-column p:hover {
+  text-decoration: underline;
+}
+
 
 
 @media (max-width: 900px) {
