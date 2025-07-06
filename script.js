@@ -7,14 +7,20 @@ hamburger.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
 });
 
-const indicators = document.querySelectorAll('.indicator');
 
+
+
+
+const indicators = document.querySelectorAll('.carousel-nav');
 indicators.forEach(indicator => {
   indicator.addEventListener('click', () => {
     indicators.forEach(ind => ind.classList.remove('active'));
     indicator.classList.add('active');
   });
 });
+
+
+
 
 const swiper = new Swiper('.testimonials-swiper', {
   navigation: {

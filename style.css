@@ -107,6 +107,7 @@ header img {
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
+   pointer-events: none;
 }
 
 .hero-text {
@@ -191,7 +192,7 @@ header img {
 
 }
 
-.carousel-indicators {
+.slider-indicators {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -200,9 +201,10 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
-.indicator {
+.carousel-nav {
   width: 40px;
   height: 3px;
   border: none;
@@ -210,10 +212,15 @@ header img {
   background: gray;
 }
 
-.indicator.active {
+.carousel-nav.active {
   background: white;
   transform: scaleY(1.5);
 }
+
+
+
+
+
 
 .hamburger {
   display: none;
@@ -322,7 +329,6 @@ header img {
   flex: 1;
   min-width: 200px;
   text-align: right;
-
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -360,11 +366,12 @@ header img {
 }
 
 
+
 .benefits-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap:10px;
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -732,12 +739,6 @@ header img {
   text-align: center;
 }
 
-.benefits-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
 
 .benefit-circle {
   width: 250px;
@@ -1021,19 +1022,21 @@ header img {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  font-family: 'Jost', serif;
+ 
 
 }
 
 .title-shake {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 50px;
   line-height: 100%;
   text-align: center;
-  margin-bottom: 40px;
-  color: #228B22;
-
+  margin-bottom: -90px;
+  color: #238014;
+  margin-top: 40px;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
+
 
 
 .card-recipes {
@@ -1045,7 +1048,7 @@ header img {
   max-width: 400px;
   min-width: 300px;
   height: 550px;
-
+  
 }
 
 
@@ -1090,22 +1093,24 @@ header img {
   bottom: 0;
   background: #55AB25;
   width: 100%;
-  padding: 20px;
+  padding: 22px;
   color: white;
   height: 25%;
   box-sizing: border-box;
-  line-height: 1.6;
-  font-family: 'Jost', sans-serif;
-  font-size: 20.82px;
+  line-height: 1.5;
 }
 
 .card-text-recipe h3 {
   margin: 0 0 10px;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.09em;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
 }
 
-
-
+.card-text-recipe.centered-text {
+  text-align: center;    
+}
 
 
 
@@ -1464,7 +1469,7 @@ header img {
     line-height: 1.1;
   }
 
-  .carousel-indicators {
+  .slider-indicators{
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -1472,7 +1477,7 @@ header img {
     gap: 6px;
   }
 
-  .indicator {
+  .carousel-nav{
     width: 20px;
     height: 2px;
   }
