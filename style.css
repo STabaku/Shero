@@ -1791,6 +1791,56 @@ header img {
     min-width: unset;
     font-size: 18px;
   }
+
+
+  .almased-footer {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #4F842E;
+    color: white;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25px;
+    gap: 40px;
+  }
+
+  .footer-logo img {
+    max-width: 120px;
+    margin-bottom: 20px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer-column {
+    min-width: unset;
+    text-align: center;
+  }
+
+  .footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .footer-column p {
+    font-size: 15px;
+    margin: 6px 0;
+  }
+
+
+ .newsletter-container {
+    padding-left: 20px;  
+    padding-right: 20px; 
+    text-align: center;  
+    align-items: center; 
+  }
 }
 
 
@@ -1973,9 +2023,6 @@ header img {
 
 
 
-
-
-
   .shake-recipes {
     width: 95%;
     height: auto;
@@ -2047,4 +2094,29 @@ header img {
     max-width: 120px;
     margin-bottom: 15px;
   }
+
+
+
+
+
+
+  .healing-quote::after {
+    top: 560px;
+    left: auto;
+    right: -32px;
+    font-size: 110px;
+
+  }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1366px){
+.healing-quote::after {
+    top: 450px;
+    left: auto;
+    right: 135px;
+    font-size: 110px;
+}
+}
+
+
+
